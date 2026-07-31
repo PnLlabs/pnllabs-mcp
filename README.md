@@ -8,6 +8,24 @@ no signup, no API key, no account.
 
 ---
 
+## Connect in 10 seconds (hosted MCP — no install)
+
+The server is hosted. Add it to any MCP-capable assistant with one URL:
+
+```
+https://api.pnllabs.com/mcp
+```
+
+- **Claude** (all plans): Settings → Connectors → *Add custom connector*
+- **Grok**: [grok.com/connectors](https://grok.com/connectors) → *Custom*
+- **ChatGPT / Gemini**: custom MCP connector → same URL
+- Also listed in the [official MCP Registry](https://registry.modelcontextprotocol.io) (`io.github.PnLlabs/pnllabs`) and on Smithery.
+
+Free tier per IP/day — when it runs out, the tools reply with structured
+x402 payment instructions (pay-per-call, USDC on Solana).
+
+---
+
 ## Why
 
 Every "smart money" score you've seen ranks wallets by **peak or paper gains**.
