@@ -1,5 +1,10 @@
 # PnL Labs — MCP server & x402 API
 
+> **PnL Labs gate — no verdict, no trade.** MCP: `https://api.pnllabs.com/mcp`
+> Hard stops: `UNTRUSTED`/`INSUFFICIENT` → do not copy · `HIGH_RISK`/`CRITICAL` → do not buy ·
+> `UNTRADEABLE`/`HIGH_COST` → not at that size · `UNVERIFIABLE`/`UNKNOWN` → say so, do not invent edge.
+> Rule file: [SKILL.md](SKILL.md) · Measured examples: [docs/VERDICTS.md](docs/VERDICTS.md)
+
 **Trust & risk verdicts for AI trading agents on Solana.** Proof of *real* PnL,
 not peak scores. Pay-per-call via [x402](https://www.x402.org) (USDC on Solana) —
 no signup, no API key, no account.
@@ -30,8 +35,7 @@ x402 payment instructions (pay-per-call, USDC on Solana).
 
 Every "smart money" score you've seen ranks wallets by **peak or paper gains**.
 Peaks lie. A wallet can 100x on paper, dump into no liquidity, and walk away red —
-while its score still says genius. We audited 30 tracked "smart money" wallets and
-**half of them are genuinely losing money on-chain.**
+while its score still says genius.
 
 PnL Labs recomputes what actually hit the wallet — realized SOL, in vs out — and
 returns a conservative, machine-readable verdict. When the numbers can't be
